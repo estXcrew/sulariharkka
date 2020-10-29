@@ -1,0 +1,220 @@
+10:38:35 **** Clean-only build of configuration Debug for project Embedded_Exercise_normal ****
+make clean 
+rm -rf  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o  ./src/blinker.d  ./src/Interrupt_setup.d ./src/Pixel.d ./src/main.d ./src/platform.d  Embedded_Exercise_normal.elf.size  Embedded_Exercise_normal.elf
+' '
+10:38:37 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Interrupt_setup.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Interrupt_setup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Interrupt_setup.d" -MT"src/Interrupt_setup.o" -o "src/Interrupt_setup.o" "../src/Interrupt_setup.c"
+../src/Interrupt_setup.c: In function 'SetupTimerInt1':
+../src/Interrupt_setup.c:103:6: warning: unused variable 'a' [-Wunused-variable]
+  int a=0;
+      ^
+../src/Interrupt_setup.c: In function 'SetupTimerInt':
+../src/Interrupt_setup.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Interrupt_setup.c: In function 'SetupTimerInt1':
+../src/Interrupt_setup.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Interrupt_setup.c: In function 'SetupGpioInterruptSystem':
+../src/Interrupt_setup.c:176:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Interrupt_setup.c'
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+'Finished building: ../src/Pixel.c'
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+10:41:54 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Kohteelle "main-build" ei tarvitse tehd‰ mit‰‰n.
+10:43:42 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Kohteelle "main-build" ei tarvitse tehd‰ mit‰‰n.
+10:44:16 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Kohteelle "main-build" ei tarvitse tehd‰ mit‰‰n.
+16:22:22 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+16:23:11 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+16:23:17 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+08:23:31 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Kohteelle "main-build" ei tarvitse tehd‰ mit‰‰n.
+08:24:47 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+09:19:33 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+10:38:23 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+'Finished building: ../src/Pixel.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+09:26:35 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33176	   2828	  22856	  58860	   e5ec	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
